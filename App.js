@@ -1,21 +1,28 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-
-export default function App() {
+/* eslint-disable no-alert */
+import * as React from "react";
+import { View, StyleSheet } from "react-native";
+import Whatappform from "./screens/whatsappForm";
+import Website from "./screens/website";
+import SocialMedia from "./screens/socialMedia";
+export default function AssetExample() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Whatappform />
+      <Website />
+      {/* <SocialMedia /> */}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 5,
+    backgroundColor: "#150033",
+    minHeight: "100%",
+    borderWidth: 1,
+    borderColor: "#12dfff",
+    borderRadius: 15,
   },
 });
